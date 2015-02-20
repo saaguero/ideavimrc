@@ -1,0 +1,45 @@
+set hlsearch
+set scrolloff=3
+set ignorecase smartcase
+set showmode
+set history=1000
+
+" easy buffer scrolling
+noremap K 5k
+noremap J 5j
+
+" easy system clipboard copy/paste
+noremap <space>y "*y
+noremap <space>Y "*Y
+noremap <space>p "*p
+noremap <space>P "*P
+
+" easy window navigation
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+nnoremap <a-h> gT
+nnoremap <a-l> gt
+
+" clear the search buffer when hitting return
+nnoremap <space><cr> :nohlsearch<cr>
+
+" intellij actions
+nnoremap <space>j :action EditorJoinLines<cr>
+nnoremap <space>\ :action VimFilePrevious<cr>
+nnoremap <space>e :action GotoFile<cr>
+nnoremap <space>E :action RecentFiles<cr>
+nnoremap <space>t :action GotoSymbol<cr>
+nnoremap <space>a :action GotoAction<cr>
+
+" intellij options
+nnoremap cow :action EditorToggleUseSoftWraps<cr>
+nnoremap con :action EditorToggleShowLineNumbers<cr>
+nnoremap col :action EditorToggleShowWhitespaces<cr>
+
+" intellij built in search looks better than ideavim '/'
+nnoremap / :action Find<cr>
+nnoremap n :action FindNext<cr>
+nnoremap N :action FindPrevious<cr>
+
