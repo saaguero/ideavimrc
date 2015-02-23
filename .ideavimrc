@@ -26,12 +26,18 @@ nnoremap <a-l> gt
 nnoremap <space><cr> :nohlsearch<cr>
 
 " intellij actions
+nnoremap <space>q :action CloseContent<cr>
+nnoremap <space>Q :action ReopenClosedTab<cr>
+
 nnoremap <space>j :action EditorJoinLines<cr>
 nnoremap <space>\ :action VimFilePrevious<cr>
 nnoremap <space>e :action GotoFile<cr>
-nnoremap <space>E :action RecentFiles<cr>
+nnoremap <space>E :action Switcher<cr>
 nnoremap <space>t :action GotoSymbol<cr>
 nnoremap <space>a :action GotoAction<cr>
+
+nnoremap <space>gt :action GotoTest<cr>
+nnoremap \r        :action RunClass<cr>
 
 " intellij options
 nnoremap cow :action EditorToggleUseSoftWraps<cr>
