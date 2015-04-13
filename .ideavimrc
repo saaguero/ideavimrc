@@ -43,9 +43,11 @@ nnoremap <space>a :action GotoAction<cr>
 
 " code navigation
 nnoremap <space>] :action GotoImplementation<cr>
+nnoremap <space>[ :action GotoSuperMethod<cr>
 nnoremap <space>u :action FindUsages<cr>
 nnoremap <space>gt :action GotoTest<cr>
 nnoremap \r :action RunClass<cr>
+nnoremap \d :action Debug<cr>
 nnoremap [] :action MethodUp<cr>
 nnoremap ][ :action MethodDown<cr>
 
@@ -58,6 +60,11 @@ nnoremap ]q :action NextOccurence<cr>
 " built-in navigation to navigated items works better
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
+" but preserve ideavim defaults
+nnoremap g<c-o> <c-o>
+nnoremap g<c-i> <c-i>
 
 " built in search looks better
 nnoremap / :action Find<cr>
+" but preserve ideavim search
+nnoremap g/ /<cr>
