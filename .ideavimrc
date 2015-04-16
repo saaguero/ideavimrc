@@ -27,7 +27,6 @@ nnoremap <space><cr> :nohlsearch<cr>
 
 " options
 nnoremap cow :action EditorToggleUseSoftWraps<cr>
-nnoremap con :action EditorToggleShowLineNumbers<cr>
 nnoremap col :action EditorToggleShowWhitespaces<cr>
 
 " actions
@@ -67,4 +66,4 @@ nnoremap g<c-i> <c-i>
 " built in search looks better
 nnoremap / :action Find<cr>
 " but preserve ideavim search
-nnoremap g/ /<cr>
+nnoremap g/ /
