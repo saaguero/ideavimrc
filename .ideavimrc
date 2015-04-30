@@ -47,8 +47,8 @@ nnoremap <space>u :action FindUsages<cr>
 nnoremap <space>gt :action GotoTest<cr>
 nnoremap \r :action RunClass<cr>
 nnoremap \d :action Debug<cr>
-nnoremap [] :action MethodUp<cr>
-nnoremap ][ :action MethodDown<cr>
+nnoremap [m :action MethodUp<cr>
+nnoremap ]m :action MethodDown<cr>
 
 " code refactoring
 nnoremap <space>rr :action RenameElement<cr>
