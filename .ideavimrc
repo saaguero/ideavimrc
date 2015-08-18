@@ -34,18 +34,19 @@ nnoremap <space>E :action Switcher<cr>
 nnoremap <space>t :action FileStructurePopup<cr>
 nnoremap <space>T :action GotoSymbol<cr>
 nnoremap <space>a :action GotoAction<cr>
+nnoremap <space>b :action ToggleLineBreakpoint<cr>
 
 " code navigation
 nnoremap <space>] :action GotoImplementation<cr>
 nnoremap <space>[ :action GotoSuperMethod<cr>
 nnoremap <space>u :action FindUsages<cr>
 nnoremap <space>gt :action GotoTest<cr>
+nnoremap <space>k :action HighlightUsagesInFile<cr>
 nnoremap \r :action RunClass<cr>
 nnoremap \R :action Run<cr>
 nnoremap \d :action DebugClass<cr>
 nnoremap \D :action Debug<cr>
-nnoremap [m :action MethodUp<cr>
-nnoremap ]m :action MethodDown<cr>
+nnoremap \c :action CheckStyleCurrentFileAction<cr>
 
 " code refactoring
 nnoremap <space>rr :action RenameElement<cr>
@@ -55,6 +56,11 @@ nnoremap [<space> O<esc>j
 nnoremap ]<space> o<esc>k
 nnoremap [q :action PreviousOccurence<cr>
 nnoremap ]q :action NextOccurence<cr>
+nnoremap [m :action MethodUp<cr>
+nnoremap ]m :action MethodDown<cr>
+nnoremap [c :action VcsShowPrevChangeMarker<cr>
+nnoremap ]c :action VcsShowNextChangeMarker<cr>
+
 
 " built-in navigation to navigated items works better
 nnoremap <c-o> :action Back<cr>
