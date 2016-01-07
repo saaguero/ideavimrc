@@ -17,6 +17,8 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-k> <c-w>k
 nnoremap <a-h> gT
 nnoremap <a-l> gt
+nnoremap <c-s-tab> gT
+nnoremap <c-tab> gt
 
 " clear the search buffer when hitting return
 nnoremap <space><cr> :nohlsearch<cr>
